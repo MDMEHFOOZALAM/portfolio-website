@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">MA.</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Timeline & Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">MA.</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#journey" onclick="toggleMenu()">Timeline & Journey</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.jpg" alt="Md Mehfooz Alam profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Md Mehfooz Alam</h1>
+      <p class="section__text__p2">
+        <span id="typing-text"></span>
+      </p>
+      <p class="about-text">
+        Passionate about building reliable, high-quality software systems
+        and ensuring flawless user experiences through comprehensive testing.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/mehfooz-alam/'" target="_blank" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/MDMEHFOOZALAM'" target="_blank" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+
+  <div class="about-wrapper">
+    <div class="about-card">
+      <h3>Introduction</h3>
+
+      <p>
+        I am a highly motivated tech enthusiast with a background in Computer Science and Engineering. I have a strong passion for software development, quality assurance, and software testing.
+      </p>
+
+      <p>
+        With an educational foundation (B.Tech) and hands-on experience, my career goal is to build reliable, high-quality software systems that solve real-world problems efficiently. I thrive on identifying deep-seated bugs, optimizing code, and bringing a user-centric approach to software engineering.
+      </p>
+
+      <p>
+        I have worked with tools like Selenium, Postman, TestNG and programming 
+        languages such as C, C++, Java, and Python.
+      </p>
+
+      <p>
+        Through my projects such as Intelligent CPU Scheduler Simulator, Smart Home Energy Management System, Personal Finance Tracker, and UrbanCart – Web Application Testing & Automation, I focus on building robust applications while ensuring software quality, performance, and reliability.
+      </p>
+      <p>
+        My goal is to start my career as a Software Test Engineer / Developer 
+        and build reliable, high-quality systems.
+      </p>
+
+      <div class="about-stats">
+        <div>
+          <h2>2+</h2>
+          <p>PROJECTS</p>
+        </div>
+        <div>
+          <h2>8+</h2>
+          <p>TOOLS</p>
+        </div>
+        <div>
+          <h2>4+</h2>
+          <p>LANGUAGES</p>
+        </div>
+        <div>
+          <h2>7.64</h2>
+          <p>CGPA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#journey'" />
+  </section>
+</section>
+
+<!-- timeline -->
+<section id="journey" class="journey section-padding">
+            <div class="container">
+                <h2 class="section-title">Timeline & <span class="highlight">Journey</span></h2>
+
+                <div class="journey-timeline">
+
+                    <div class="journey-item animate-on-scroll">
+                        <div class="journey-dot"></div>
+                        <div class="journey-content glass-card">
+                            <h3>B.Tech – Computer Science Engineering</h3>
+                            <span class="journey-date">Aug’23 – Present</span>
+                            <p>Lovely Professional University, Punjab • CGPA: 7.64</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-item animate-on-scroll delay-1">
+                        <div class="journey-dot"></div>
+                        <div class="journey-content glass-card">
+                            <h3>Intermediate (12th)</h3>
+                            <span class="journey-date">Apr’21 – Mar’23</span>
+                            <p>R.D.S College, Bihar • 75%</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-item animate-on-scroll delay-2">
+                        <div class="journey-dot"></div>
+                        <div class="journey-content glass-card">
+                            <h3>Matriculation (10th)</h3>
+                            <span class="journey-date">Apr’19 – Mar’21</span>
+                            <p>Shanti Niketan Sr. Sec. School, Bihar • 82%</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+<section id="skills" class="skills section-padding">
+  <div class="container">
+    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+    <div class="skills-container">
+
+      <!-- PROGRAMMING -->
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>C++</h4><p>Experienced</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Java</h4><p>Experienced</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>C</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Kotlin</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>JavaScript</h4><p>Basic</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>DSA</h4><p>Experienced</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>HTML/CSS</h4><p>Intermediate</p></div></div>
+      </div>
+
+      <!-- SOFTWARE TESTING & FRAMEWORKS -->
+      <div class="skill-card">
+        <h3>Frameworks & Testing</h3>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Selenium</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>TestNG</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Jupiter</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Maven</h4><p>Basic</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Machine Learning</h4><p>Basic</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Regression Models</h4><p>Basic</p></div></div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="skill-card">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Eclipse</h4><p>Advanced</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Android Studio</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Git / GitHub</h4><p>Intermediate</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Problem-Solving</h4><p>Advanced</p></div></div>
+        <div class="skill-item"><i class="fas fa-check-circle"></i><div><h4>Adaptability</h4><p>Advanced</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section id="projects">
+    <p class="section__text__p1 animate-on-scroll">Browse My Recent</p>
+    <h1 class="title animate-on-scroll delay-1">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers flex-wrap">
+        <div class="details-container color-container animate-on-scroll">
+          <div class="article-container">
+            <img src="./assets/cgpa_calculator.png" alt="CGPA Calculator" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">CGPA Calculator</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MDMEHFOOZALAM'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MDMEHFOOZALAM'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container animate-on-scroll delay-1">
+          <div class="article-container">
+            <img src="./assets/taxi_fare_estimator.png" alt="AI Taxi Fare Estimator" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">AI Taxi Fare Estimator</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MDMEHFOOZALAM'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MDMEHFOOZALAM'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container animate-on-scroll delay-2">
+          <div class="article-container">
+            <img src="./assets/blood_bank_locator.png" alt="Blood Bank Locator" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Blood Bank Locator</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MDMEHFOOZALAM'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MDMEHFOOZALAM'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certificates'" />
+  </section>
+
+  <section id="certificates" class="section-padding">
+    <p class="section__text__p1 animate-on-scroll">My Achievements</p>
+    <h1 class="title animate-on-scroll delay-1">Certificates</h1>
+    <div class="experience-details-container">
+      <div class="about-containers flex-wrap">
+        <!-- Certificate 1 -->
+        <div class="details-container color-container animate-on-scroll">
+          <div class="article-container certificate-container">
+            <img src="./assets/education.png" alt="Certificate Icon" style="height: 5rem; width: auto;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Computational Theory & Automata</h2>
+          <p class="cert-issuer">Infosys</p>
+          <div class="btn-container mt-1">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('#')">
+              View Credential
+            </button>
+          </div>
+        </div>
+        
+        <!-- Certificate 2 -->
+        <div class="details-container color-container animate-on-scroll delay-1">
+          <div class="article-container certificate-container">
+            <img src="./assets/experience.png" alt="Certificate Icon" style="height: 5rem; width: auto;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Data Structure and Algorithm (C++)</h2>
+          <p class="cert-issuer">Udemy</p>
+          <div class="btn-container mt-1">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('#')">
+              View Credential
+            </button>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="details-container color-container animate-on-scroll delay-2">
+          <div class="article-container certificate-container">
+            <img src="./assets/checkmark.png" alt="Certificate Icon" style="height: 5rem; width: auto;" />
+          </div>
+          <h2 class="experience-sub-title project-title">C Programming Bootcamp</h2>
+          <p class="cert-issuer">Udemy</p>
+          <div class="btn-container mt-1">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('#')">
+              View Credential
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1 animate-on-scroll">Get in Touch</p>
+    <h1 class="title animate-on-scroll delay-1">Contact Me</h1>
+    <div class="contact-info-upper-container animate-on-scroll delay-2">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:mdmehfooz610@gmail.com">mdmehfooz610@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/mehfooz-alam/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#journey">Timeline</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Md Mehfooz Alam. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
